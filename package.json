@@ -43,7 +43,7 @@
   },
   "devDependencies": {
     "gh-pages": "^6.3.0",
-    "homepage": "https://github.com/GiovaniAraujo97/form-cadastro",
+    "homepage": "https://GiovaniAraujo97.github.io/form-cadastro",
     "sass": "^1.85.0"
   }
 }
