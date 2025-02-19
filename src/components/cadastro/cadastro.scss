@@ -1,0 +1,97 @@
+// Cadastro.scss
+
+/* Variáveis para cores e fontes */
+$primary-color: #4caf50;
+$secondary-color: #f1f1f1;
+$accent-color: #333;
+$border-radius: 8px;
+$input-padding: 10px;
+$font-family: 'Arial', sans-serif;
+
+/* Global styles */
+body {
+  font-family: $font-family;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: $accent-color;
+}
+
+/* Container for the form */
+div {
+  background-color: white;
+  padding: 30px;
+  border-radius: $border-radius;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+
+  h1 {
+    text-align: center;
+    color: $primary-color;
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    input {
+      padding: $input-padding;
+      border: 1px solid #ddd;
+      border-radius: $border-radius;
+      font-size: 16px;
+      outline: none;
+      transition: all 0.3s;
+
+      &:focus {
+        border-color: $primary-color;
+      }
+
+      &::placeholder {
+        color: #bbb;
+      }
+    }
+
+    button {
+      padding: $input-padding;
+      background-color: $primary-color;
+      color: white;
+      border: none;
+      border-radius: $border-radius;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: darken($primary-color, 10%);
+      }
+    }
+  }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  div {
+    padding: 20px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  input,
+  button {
+    font-size: 14px;
+    padding: 12px;
+  }
+}
